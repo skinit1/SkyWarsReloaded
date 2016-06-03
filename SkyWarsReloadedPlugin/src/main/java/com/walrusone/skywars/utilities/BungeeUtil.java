@@ -36,7 +36,7 @@ public class BungeeUtil {
 
 			ByteArrayOutputStream msgbytes = new ByteArrayOutputStream();
 			DataOutputStream msgout = new DataOutputStream(msgbytes);
-			msgout.writeUTF(name + ":" + game.getState().toString() + ":" + Integer.toString(game.getPlayers().size()) + ":" + Integer.toString(game.getNumberOfSpawns()) + ":" + game.getMapName());
+			msgout.writeUTF(+ game.getState().toString() + );
 
 			out.writeShort(msgbytes.toByteArray().length);
 			out.write(msgbytes.toByteArray());
